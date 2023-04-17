@@ -7,6 +7,7 @@ import "hardhat-contract-sizer";
 import "solidity-coverage";
 import "dotenv/config";
 
+
 const localNet: NetworkUserConfig = {
   url: "http://127.0.0.1:8545",
   chainId: 1337,
