@@ -32,4 +32,6 @@ typechain-types
 # Hardhat files
 cache
 artifacts
+sm-contracts/*
+.DS_Store
 

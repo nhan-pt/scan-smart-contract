@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "crawl": "ts-node ./save-file.ts",
+        "crawl": "npm run clean && ts-node ./src/crawl-sm-code.ts",
+        "clean": "rm -rf ./sm-contracts/*",
         "deploy:testnet": "npx hardhat run --network = scripts/deploy.ts",
         "deploy:local": "npx hardhat run --network local scripts/deploy.ts",
         "deploy:mainnet": "npx hardhat run --network mainnet scripts/deploy.ts",

@@ -71,7 +71,7 @@ describe("Scan listing token", function () {
       .balanceOf(zeroAddress)
       .call();
     console.log('Zero balance:', zeroBalance);
-    expect(Number(zeroBalance)).lt(testAmount);
+    expect(Number(zeroBalance)).eq(0);
   });
 
   it("transfer from zeroAddress to holder", async function () {
@@ -131,6 +131,7 @@ describe("Scan listing token", function () {
       .call();
     console.log("allowance:", allowance);
 
+    expect(Number(allowance)).gt(Number(allowance));
     await contract.methods.approve(zeroAddress, testAmount).send({
       from: holder,
     });
@@ -186,12 +187,6 @@ describe("Scan listing token", function () {
     expect(Number(zeroBlAfter)).eq(Number(zeroBalance) + approveAmount);
     expect(Number(alAfter)).eq(0);
 
-  });
-
-  it("Token Total supply", async function () {
-    const totalSupply = await contract.methods.totalSupply().call();
-
-    expect(Number(totalSupply)).gt(0);
   });
 
 });

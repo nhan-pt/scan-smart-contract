@@ -52,7 +52,7 @@ async function getSmartContractCode() {
       );
 
       fs.writeFileSync(
-        `./contracts/${fileName}.sol`,
+        `./sm-contracts/${fileName}.sol`,
         response.data.result[0].SourceCode
       );
     } catch (error) {
