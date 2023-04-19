@@ -15,8 +15,7 @@ chai.use(chaiAsPromised)
 
 
 const smartContract = process.env.SM_ADDRESS?.toString()
-const holder = process.env.HOLDER?.toString()
-const zeroPrivate = process.env.ZERO_PRIVATE?.toString()||''
+const holder = process.env.HOLDER_ADDRESS?.toString()
 const testAmount = 10000
 // Start test block
 describe("Scan listing token", function () {
