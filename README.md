@@ -3,6 +3,7 @@
 The goal of this project is to develop a tool or system that can scan smart contracts for security vulnerabilities
 The project will require significant expertise in smart contract development and blockchain technologies, as well as programming languages commonly used for smart contracts, such as Solidity. It may also require collaboration with security experts and blockchain developers to ensure that the system is effective and meets the needs of the community.
 
+![image](./asset/scan-trip.jpg)
 
 # Smartcontract unit test
 
