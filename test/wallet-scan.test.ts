@@ -5,7 +5,7 @@ import chai from 'chai'
 import chaiAsPromised from "chai-as-promised";
 import Web3 from "web3";
 import { AbiItem } from "web3-utils";
-import { abiUsd } from "../a1_abi";
+import { abiUsd } from "../src/common-abi";
 import dotenv from 'dotenv'
 import { ethers } from "hardhat"
 dotenv.config()
