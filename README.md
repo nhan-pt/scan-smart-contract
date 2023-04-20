@@ -23,11 +23,15 @@ ganache-cli --fork https://mainnet.infura.io/v3/794e26a10b812376969123bed1876d9c
 #### Step 2. Update .env
 ```
 #Smart-contract testing address
-SM_ADDRESS=
+SM_ADDRESS=0x*****b842afd82d940ff5d8f6ef3399572592*****
 
 #Holder address
-HOLDER_ADDRESS=0xb842afd82d940ff5d8f6ef3399572592ebf182b0
+HOLDER_ADDRESS=0x*****b842afd82d940ff5d8f6ef3399572592*****
+
+#Holder address
+SCANNER_PRIVATE_KEY=***3A6XK1CQXY6BAV1UYFEHSAAAAAAA***
 ```
++ You can find all information from ether scan. [readmore](https://docs.etherscan.io/getting-started/viewing-api-usage-statistics)
 
 #### Step 3. Run command line test
 ```
@@ -49,6 +53,7 @@ The script will scan the famous functions which using buy hot_wallet system of B
 + approve
 + balanceOf
 ```
+[example](https://etherscan.io/address/0x5a98fcbea516cf06857215779fd812ca3bef1b32#code)
 The result of unitest is not mean this smart contract is safe or not, and  is not a substitute for manual scanning. It just provice more information to scanner. Scanner can use this info to more focus on the not pass functions and save time.
 
 # Smartcontract manual test
@@ -68,6 +73,7 @@ burn
 totalSupply
 maximumTotalSupply. 
 ```
+[example](https://etherscan.io/address/0x5a98fcbea516cf06857215779fd812ca3bef1b32#code)
 If the Mint function or Burn function exist in smart-contract code that mean the totalSupply of this smartcontract can be chang. In that case, you need to check mint function has logic to check totalSupply allway less than maximumTotalSupply.
 The mint or burn functionneedso grand access, onlyexecutede by Owner or Admin list.
 
