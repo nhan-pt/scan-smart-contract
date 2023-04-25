@@ -45,7 +45,7 @@ or
 yarn test wallet_scan.test.ts
 ```
 
-The script will scan the famous functions which using buy hot_wallet system of Bitcastle.
+The script will scan the famous functions which using in your like system.
 ```
 + balanceOf
 + transfer
@@ -80,10 +80,10 @@ The mint or burn functionneedso grand access, onlyexecutede by Owner or Admin li
 
 #### Step 2.
 Scanner forcus on famous functions like Unit test part - step 3
-a lot of smart-contract have magic logic that can make the master issue for Bitcastle 
+a lot of smart-contract have magic logic that can make the master issue for your system 
 + Stuck function like Can not collect balance from user wallet because transferFrom is not working .etc
 + Loss of balance of Mother wallet or President wallet because smart-contract government will take tax fee when we execute withdraw transaction .etc
 
-The scanner needs to collect full information about the strange logic, risk, and anything's can affect to Bitcastle system
+The scanner needs to collect full information about the strange logic, risk, and anything's can affect to your system
 
 # END
